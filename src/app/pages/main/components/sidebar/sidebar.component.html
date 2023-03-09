@@ -1,0 +1,75 @@
+<div id="container">
+  <mat-action-list>
+    <div>
+      <div id="account-manage">
+        <div id="ava">
+          <img src="../../../../../assets/ava.jpg" alt="ava">
+        </div>
+        <div id="workspace-name">
+          My workspace
+          <span class="material-symbols-outlined" [matMenuTriggerFor]="work_space_menu">
+            arrow_drop_down
+          </span>
+        </div>
+      </div>
+
+      <!-- <div mat-subheader>Pages</div> -->
+      <button mat-list-item *ngFor="let folder of tops">
+        <mat-icon mat-list-icon style="color: #92e3a9;">{{folder.icon}}</mat-icon>
+        <div mat-line>{{folder.name}}</div>
+      </button>
+    </div>
+
+    <div style="height: 52vh;">
+      <mat-divider></mat-divider>
+      <!-- <div mat-subheader>Sheets</div> -->
+
+      <button mat-list-item *ngFor="let note of mids">
+        <mat-icon mat-list-icon style="color: #92e3a9;">{{note.icon}}</mat-icon>
+        <div mat-line>{{note.name}}</div>
+      </button>
+      <button mat-list-item (click)="openDialog()">
+        <mat-icon mat-list-icon style="color: #92e3a9;">create_new_folder</mat-icon>
+        <div mat-line>Add Folder</div>
+      </button>
+
+    </div>
+
+
+    <div id="bottom-sidebar">
+      <mat-divider></mat-divider>
+      <button mat-list-item *ngFor="let note of bots">
+        <mat-icon mat-list-icon style="color: #92e3a9;">{{note.icon}}</mat-icon>
+        <div mat-line>{{note.name}}</div>
+      </button>
+    </div>
+  </mat-action-list>
+</div>
+
+<mat-menu #work_space_menu="matMenu" xPosition="before" yPosition="below" style="padding: 0;">
+  <button mat-menu-item>
+    <img src="../../../../../assets/ava.jpg" alt="ava" width="40" height="40">
+    <span>My workspace</span>
+  </button>
+  <mat-divider></mat-divider>
+  <button mat-menu-item>
+    <img src="../../../../../assets/ava.jpg" alt="ava" width="40" height="40">
+    <span>My workspace</span>
+  </button>
+  <mat-divider></mat-divider>
+  <button mat-menu-item>
+    <img src="../../../../../assets/ava.jpg" alt="ava" width="40" height="40">
+    <span>My workspace</span>
+  </button>
+  <mat-divider></mat-divider>
+  <button mat-menu-item>
+    <img src="../../../../../assets/ava.jpg" alt="ava" width="40" height="40">
+    <span>My workspace</span>
+  </button>
+  <mat-divider></mat-divider>
+  <button mat-menu-item>
+    <mat-icon id="add_icon">add_box</mat-icon>
+    <span>Create workspace</span>
+  </button>
+
+</mat-menu>

@@ -1,0 +1,23 @@
+.editor-container {
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
+    overflow: auto;
+    position: fixed;
+    top: 60px;
+}
+
+.editor-side-panel {
+    grid-column: 1 / 2;
+}
+
+.editor-main {
+    grid-column: 2 / 3;
+    overflow: auto;
+    height: 95vh;
+
+    div {
+        height: 100%;
+        width: 100%;
+    }
+
+}

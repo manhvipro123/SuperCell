@@ -1,0 +1,24 @@
+<div class="appbar">
+    <span class="file-title">
+        Untitled file
+    </span>
+    <span class="menu">
+        <button *ngFor="let item of menuItems; let i = index;" class="menu-button" (click)="selectMenu(i)"
+            [ngStyle]="{'color':selectedMenuIndex==i?'#00ac50':'#919191'}">
+            <div>
+                <span class="material-symbols-outlined">
+                    {{item.icon}}
+                </span>
+                <span>{{item.name}}</span>
+            </div>
+        </button>
+
+    </span>
+    <span class="backButton">
+        <button mat-icon-button aria-label="Example icon button with a home icon" [routerLink]="'/main'">
+            <mat-icon>
+                arrow_back
+            </mat-icon>
+        </button>
+    </span>
+</div>

@@ -1,0 +1,11 @@
+<app-app-bar></app-app-bar>
+<div class="editor-container">
+    <div class="editor-side-panel">
+        <app-file-tools [currentCell]="currentCell"></app-file-tools>
+    </div>
+    <div class="editor-main">
+        <div>
+            <app-spreadsheet-table (newCurrentCellEvent)="currentCell = $event"></app-spreadsheet-table>
+        </div>
+    </div>
+</div>

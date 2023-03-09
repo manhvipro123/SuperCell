@@ -1,0 +1,70 @@
+<div class="menu-panel">
+    <div class="menu-header">
+        File
+    </div>
+    <div class="menu-input-text">
+        <span>
+            File name
+        </span>
+        <input title="fileName">
+    </div>
+    <div class="menu-button-list">
+        <button class="menu-button">
+            <div>
+                <span class="material-symbols-outlined">
+                    save
+                </span>
+                <span>Save as</span>
+            </div>
+        </button>
+        <button class="menu-button">
+            <div>
+                <span class="material-symbols-outlined">
+                    print
+                </span>
+                <span>Print</span>
+            </div>
+        </button>
+
+        <button class="menu-button">
+            <div>
+                <span class="material-symbols-outlined">
+                    download
+                </span>
+                <span>Export .xlsx</span>
+            </div>
+        </button>
+    </div>
+
+    <div class="menu-header">
+        Sheets
+    </div>
+    <div class="menu-input-text">
+        <span>
+            Rows
+        </span>
+        <input title="rows" [value]="currentCell.row">
+    </div>
+    <br />
+    <div class="menu-input-text">
+        <span>
+            Columns
+        </span>
+        <input title="cols" [value]="currentCell.col">
+    </div>
+    <br />
+    <div class="menu-input-text">
+        <span>
+            F(x)
+        </span>
+        <input type="text" [value]="currentCell.value" title="fx">
+    </div>
+    <button class="menu-button">
+        <div>
+            <span class="material-symbols-outlined">
+                add
+            </span>
+            <span>New sheet</span>
+        </div>
+    </button>
+</div>

@@ -1,0 +1,19 @@
+<div id="navbar">
+    <app-navbar (newToggleEvent)="snav.toggle()"></app-navbar>
+</div>
+<div id="main-content">
+    <div class="example-container" [class.example-is-mobile]="mobileQuery.matches" >
+        <mat-sidenav-container class="example-sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 0 : 0">
+            <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches"
+                fixedTopGap="40">
+                <app-sidebar></app-sidebar>
+            </mat-sidenav>
+
+            <mat-sidenav-content>
+                <!-- <p *ngFor="let content of fillerContent">{{content}}</p> -->
+                <router-outlet></router-outlet>
+            </mat-sidenav-content>
+        </mat-sidenav-container>
+    </div>
+
+</div>

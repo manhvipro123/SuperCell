@@ -1,0 +1,27 @@
+.mat-dialog-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mat-dialog-title {
+    margin: 0;
+    padding: 15px;
+
+    #dialog-title {
+        margin-bottom: 0;
+    }
+}
+
+.mat-dialog-content {
+    height: 100%;
+    background-color: white;
+
+    .example-form {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .example-full-width {
+        width: 100%;
+    }
+}

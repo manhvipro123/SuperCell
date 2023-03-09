@@ -1,0 +1,128 @@
+#container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .mat-list-icon {
+        color: #92e3a9;
+    }
+
+    #inv-but {
+        line-height: 0;
+    }
+
+    #option.mat-subheader {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        div {
+            cursor: pointer;
+        }
+
+        div:hover {
+            font-weight: bold;
+        }
+
+        #tab-opt-but {
+            display: flex;
+            flex-direction: row;
+
+            div {
+                margin-left: 5px;
+            }
+        }
+    }
+
+}
+
+button.mat-menu-item {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 10px;
+
+    img {
+        margin: auto 0;
+    }
+
+    #add_icon {
+        color: #92e3a9;
+        margin: auto 0;
+    }
+
+    .mat-icon {
+        height: 40px;
+        width: 40px;
+    }
+
+    .material-icons {
+        font-size: 40px;
+    }
+}
+
+#folder-title {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    flex-direction: column;
+
+    p {
+        margin: 0;
+    }
+
+    #folder-ref {
+        font-size: small;
+        color: #989898;
+    }
+}
+
+table {
+    width: 100%;
+
+    td {
+        cursor: pointer;
+
+        mat-icon {
+
+            opacity: 0.5;
+            float: right;
+        }
+
+        mat-icon:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+    background-color: #92e3a9 !important;
+}
+
+::ng-deep .mat-checkbox-ripple .mat-ripple-element {
+    background-color: #92e3a9 !important;
+}
+
+::ng-deep .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+    background-color: #92e3a9 !important;
+}
+
+::ng-deep #folder-table {
+    .mat-list-item-content {
+        align-items: flex-start !important;
+    }
+
+}
+
+tr.example-element-row:not(.example-expanded-row):hover {
+    background: whitesmoke;
+}
+
+tr.example-element-row:not(.example-expanded-row):active {
+    background: #efefef;
+}
+
+.example-element-row td {
+    border-bottom-width: 0;
+}
